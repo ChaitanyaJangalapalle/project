@@ -1,0 +1,1498 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 426px) {
+    .cls1 {
+        z-index: 10;
+        position: fixed;
+        padding: 2%;
+        color: black;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+    }
+
+    .cls1a {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 160%;
+        color: rgb(9, 9, 9);
+        cursor: pointer;
+        display: block;
+    }
+
+    .cls2a {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(154, 228, 228);
+        gap: 30px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #menu-toggle:checked+.menu-icon+.cls2a {
+        display: flex;
+    }
+
+    .cls2a a {
+        text-decoration: none;
+        color: rgb(12, 12, 12);
+        font-size: 18px;
+    }
+
+    .cls2a a:hover {
+        font-size: 150%;
+        color: orangered;
+    }
+
+    .cls2a11 {
+        display: none;
+
+    }
+
+    .el1 {
+        background-image: url(https://images.opencollective.com/ospic/be9b57c/background.png);
+        width: 400%;
+        height: 100vh;
+    }
+
+    @keyframes matter {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translate(100px);
+        }
+    }
+
+    .el2 {
+        position: relative;
+        top: 180px;
+        left: 100px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 22px;
+        font-family: cursive;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 250px;
+        row-gap: 5px;
+    }
+
+    .box1 {
+        background-color: rgb(136, 220, 220);
+        width: 55%;
+        height: 75vh;
+        border-radius: 25px;
+        padding: 60px 25px;
+        font-family: cursive;
+        font-weight: 600;
+    }
+
+    .box1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box1>button:hover {
+        background-color: rgb(136, 220, 220);
+        border-color: black;
+    }
+
+    .box2 {
+        background-color: rgb(177, 227, 227);
+        width: 55%;
+        height: 75vh;
+        border-radius: 25px;
+        padding: 55px 25px;
+        font-family: cursive;
+        font-weight: 600;
+    }
+
+    .box2>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box2>button:hover {
+        background-color: rgb(177, 227, 227);
+        border-color: black;
+    }
+
+    .pic {
+        width: 25px;
+        height: 5vh;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 600px;
+        gap: 40px;
+        font-size: 30px;
+    }
+
+    .img1 {
+        position: relative;
+        top: 700px;
+        left: 250px;
+        width: 300vw;
+    }
+
+    .about1 {
+        width: 320%;
+        font-family: verdana;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+        padding-top: 700px;
+        padding-left: 100px;
+    }
+
+    @keyframes about1 {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translatex(-100px);
+        }
+    }
+
+    .about2 summary:hover {
+        background-color: rgb(68, 150, 212);
+        width: 95%;
+        height: 5vh;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    .bgimage {
+        background-image: url(https://files.123freevectors.com/wp-content/original/142192-blue-and-white-professional-background.jpg);
+        width: 400vw;
+        height: 360vh;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    .text1 {
+        text-align: center;
+        font-family: cursive;
+        font-weight: 1000;
+        font-size: 50px;
+        padding-top: 10px;
+    }
+
+    .text1>h1,
+    h4 {
+        font-weight: 1000;
+        font-size: 50px;
+    }
+
+    .bgcolor {
+        background-color: white;
+        width: 50%;
+        height: 320vh;
+        border-radius: 25px;
+        position: relative;
+        left: 430px;
+    }
+
+    .how {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 30px;
+        align-items: center;
+    }
+
+    .how2 h2 {
+        font-size: 30px;
+    }
+
+    .how2 p {
+        width: 320px;
+        font-family: cursive;
+        font-size: 25px;
+    }
+
+    .dentist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 160px;
+        animation-duration: 1s;
+        animation-name: dentist;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes dentist {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translatex(-100px);
+        }
+    }
+
+    .dentist1 {
+        width: 480%;
+        padding-left: 190px;
+        font-family: cursive;
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .dentist1 b {
+        font-size: 25px;
+    }
+
+    .dentist1>button:hover {
+        background-color: aqua;
+        border-color: rgb(16, 16, 17);
+    }
+
+    .dentist1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .dentist2 {
+        width: 1400px;
+        height: 1000px;
+        padding-bottom: 180px;
+        padding-left: 180px;
+    }
+
+    .counter1 {
+        width: 200%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 180px;
+        align-items: center;
+        padding-left: 430px;
+    }
+
+    .count1>b {
+        font-size: 70px;
+
+    }
+
+    .count1>span {
+        color: aqua;
+        font-weight: bold;
+    }
+
+    .section {
+        padding-left: 150px;
+        position: relative;
+        left: 200px;
+    }
+
+    .section1>h1,
+    h5 {
+        text-align: center;
+        position: relative;
+        left: 240px;
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        justify-content: center;
+        position: relative;
+        left: 140px;
+    }
+
+    .section3 {
+        background-color: rgb(147, 191, 191);
+        width: 250%;
+        height: 130vh;
+        border-radius: 2%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .section3>b {
+        font-size: 80px;
+    }
+
+    .section3>button:hover {
+        background-color: rgb(147, 191, 191);
+        border-color: rgb(18, 18, 19);
+    }
+
+    .section3>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .section5>b {
+        font-size: 80px;
+    }
+
+    .section5>button:hover {
+        background-color: rgb(231, 241, 238);
+        border-color: rgb(15, 16, 17);
+    }
+
+    .section5>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        background-color: rgb(97, 97, 152);
+    }
+
+    .section5 {
+        background-color: rgb(218, 221, 221);
+        width: 250%;
+        height: 130vh;
+        border-radius: 2%;
+        text-align: center;
+
+        padding-top: 70px;
+    }
+
+    .FAQ {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        z-index: 2;
+        position: relative;
+        left: 300px;
+    }
+
+    .FAQ1>p,
+    b {
+        font-size: 40px;
+        font-family: cursive;
+        width: 150%;
+    }
+
+    .FAQ1>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .FAQ1>button {
+        border-radius: 40%;
+        padding: 30px 50px;
+        background-color: aqua;
+    }
+
+    .FAQ2 {
+        width: 240%;
+        font-family: cursive;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        left: 350px;
+        row-gap: 20px;
+    }
+
+    .address1 {
+        display: flex;
+        font-size: 30px;
+        column-gap: 35px;
+        align-items: center;
+    }
+
+    .appoint {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        position: relative;
+        left: 200px;
+
+    }
+
+    .appointment {
+        background-image: url(https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/Rounded-Rectangle-1202-copy-21.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 200vw;
+    }
+
+    .appointment1 {
+        color: white;
+        margin-left: 70px;
+        margin-top: 180px;
+    }
+
+    .app1 {
+        display: flex;
+        column-gap: 10px;
+        color: white;
+        width: 340px;
+    }
+
+    .appoint1 {
+        display: flex;
+        flex-direction: column;
+        column-gap: 250px;
+        position: relative;
+        left: 300px;
+    }
+
+    .appointment2>p {
+        color: blue;
+    }
+
+    .inp {
+        width: 400px;
+        height: 40px;
+    }
+
+    .appointment2>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .appointment2>button {
+        border-radius: 40%;
+        padding: 20px 40px;
+        background-color: aqua;
+    }
+
+    .appointment2 {
+        position: relative;
+        left: 190px;
+    }
+
+    #foot {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5%;
+        background-color: black;
+        width: 377%;
+        height: 180vh;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+
+        .foot1 {
+            width: 80%;
+            color: white;
+            font-size: 30px;
+        }
+
+        .foot1>h2 {
+            font-size: 30px;
+        }
+
+        .foot2 {
+            width: 100%;
+            font-size: 30px;
+            padding-left: 280px;
+        }
+
+        .foot2>h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        .foot2_1>img {
+            border-radius: 50%;
+        }
+
+        .foot2_1 {
+            display: flex;
+            color: white;
+            column-gap: 20px;
+        }
+
+        .foot3_1 {
+            display: flex;
+            column-gap: 10px;
+            color: white;
+            font-size: 30px;
+            position: relative;
+            right: 300px;
+        }
+
+        .foot4 {
+            background-color: gray;
+            width: 100%;
+            height: 175vh;
+            color: white;
+        }
+    }
+}
+
+/* tab view */
+@media screen and (min-width:427px)and (max-width: 768px) {
+    .cls1 {
+        z-index: 10;
+        position: fixed;
+        padding: 2%;
+        color: black;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+    }
+
+    .cls1a {
+        display: flex;
+        align-items: center;
+        gap: 10%;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 160%;
+        color: rgb(8, 8, 8);
+        cursor: pointer;
+        display: block;
+    }
+
+    .cls2a {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(24, 174, 174);
+        gap: 30px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #menu-toggle:checked+.menu-icon+.cls2a {
+        display: flex;
+    }
+
+    .cls2a a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    .cls2a a:hover {
+        font-size: 150%;
+        color: rgb(16, 16, 16);
+    }
+
+    .el1 {
+        background-image: url(https://images.opencollective.com/ospic/be9b57c/background.png);
+        width: 100%;
+        height: 80vh;
+    }
+
+    @keyframes matter {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translate(100px);
+        }
+    }
+
+    .el2 {
+        position: relative;
+        top: 120px;
+        left: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 17px;
+        font-family: cursive;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+    }
+
+    .box1 {
+        background-color: rgb(136, 220, 220);
+        width: 50%;
+        height: 70vh;
+        border-radius: 25px;
+        padding: 60px 25px;
+        font-family: cursive;
+    }
+
+    .box1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box1>button:hover {
+        background-color: rgb(136, 220, 220);
+        border-color: black;
+    }
+
+    .box2 {
+        background-color: rgb(177, 227, 227);
+        width: 50%;
+        height: 70vh;
+        border-radius: 25px;
+        padding: 55px 25px;
+        font-family: cursive;
+    }
+
+    .box2>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box2>button:hover {
+        background-color: rgb(177, 227, 227);
+        border-color: black;
+    }
+
+    .pic {
+        width: 25px;
+        height: 5vh;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1300px;
+        gap: 40px;
+    }
+
+    .about1 {
+        width: 75%;
+        font-family: verdana;
+        font-size: 18px;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes about1 {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translatex(-100px);
+        }
+    }
+
+    .about2 summary:hover {
+        background-color: rgb(68, 150, 212);
+        width: 95%;
+        height: 5vh;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    .bgimage {
+        background-image: url(https://files.123freevectors.com/wp-content/original/142192-blue-and-white-professional-background.jpg);
+        width: 100%;
+        height: 250vh;
+    }
+
+    .text1 {
+        text-align: center;
+        font-family: cursive;
+        font-style: oblique;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .bgcolor {
+        background-color: white;
+        width: 55%;
+        height: 220vh;
+        border-radius: 25px;
+        position: relative;
+        left: 180px;
+    }
+
+    .how {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .how2 p {
+        width: 300px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 25px;
+    }
+
+    .dentist {
+        padding-left: 15px;
+    }
+
+    .dentist1>b {
+        font-size: 20px;
+    }
+
+    .dentist2 {
+        padding-left: 45px;
+        padding-bottom: 90px;
+        width: 85vw;
+    }
+
+    .dentist1>button:hover {
+        background-color: aqua;
+        border-color: rgb(16, 16, 17);
+    }
+
+    .dentist1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .counter1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 200px;
+        align-items: center;
+    }
+
+    .count1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .count1>b {
+        font-size: 50px;
+    }
+
+    .count1>span {
+        color: aqua;
+    }
+
+    .section {
+        background-image: url(https://c1.wallpaperflare.com/preview/736/61/167/aerial-cardiac-care-checkup.jpg);
+        width: 100%;
+        height: 150vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 60px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .section3 {
+        background-color: rgb(147, 191, 191);
+        width: 30%;
+        height: 120vh;
+        border-radius: 2%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .section3>b {
+        font-size: 80px;
+    }
+
+    .section3>button:hover {
+        background-color: rgb(147, 191, 191);
+        border-color: rgb(18, 18, 19);
+    }
+
+    .section3>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .section5>b {
+        font-size: 80px;
+    }
+
+    .section5>button:hover {
+        background-color: rgb(231, 241, 238);
+        border-color: rgb(15, 16, 17);
+    }
+
+    .section5>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        background-color: rgb(97, 97, 152);
+    }
+
+    .section5 {
+        background-color: rgb(218, 221, 221);
+        width: 30%;
+        height: 120vh;
+        border-radius: 2%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .FAQ1 {
+        text-align: center;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .FAQ1>p,
+    b {
+        font-size: 40px;
+        font-family: cursive;
+    }
+
+    .FAQ1>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .FAQ1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        background-color: aqua;
+    }
+
+    .address {
+        background-color: gainsboro;
+        width: 100%;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .appoint {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    .appointment {
+        background-image: url(https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/Rounded-Rectangle-1202-copy-21.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .appointment1 {
+        color: white;
+        margin-left: 70px;
+        margin-top: 180px;
+
+    }
+
+    .app1 {
+        display: flex;
+        column-gap: 10px;
+        color: white;
+        width: 340px;
+    }
+
+    .appointment2>p {
+        color: blue;
+    }
+
+    .inp {
+        width: 400px;
+        height: 40px;
+    }
+
+    .appointment2 {
+        text-align: center;
+    }
+
+    .appointment2>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .appointment2>button {
+        border-radius: 40%;
+        padding: 20px 40px;
+        background-color: aqua;
+    }
+
+    #foot {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5%;
+        background-color: black;
+        width: 100%;
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        row-gap: 10px;
+    }
+
+    .foot2_1>img {
+        border-radius: 50%;
+    }
+
+    .foot4 {
+        text-align: center;
+    }
+}
+
+/* lap view */
+@media screen and (min-width:900px)and (max-width: 2000px) {
+    .cls2a a {
+        text-decoration: none;
+        color: rgb(28, 27, 27);
+        font-size: 100%;
+        text-transform: uppercase;
+    }
+
+    .cls2a a:hover {
+        /* font-size: 150%; */
+        color: rgb(239, 142, 7);
+    }
+
+    .cls2a11 {
+        display: flex;
+        /* gap: 40%; */
+    }
+
+    .cls1 {
+        z-index: 10;
+        position: fixed;
+        padding: 2%;
+        color: black;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .cls2a {
+        display: flex;
+        gap: 30px
+    }
+
+    .cls1a {
+        display: flex;
+    }
+
+    .cls1a {
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .el1 {
+        background-image: url(https://images.opencollective.com/ospic/be9b57c/background.png);
+        width: 100%;
+        height: 80vh;
+    }
+
+    @keyframes matter {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translate(100px);
+        }
+    }
+
+    .el2 {
+        position: relative;
+        top: 120px;
+        left: 100px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        font-size: 17px;
+        font-family: cursive;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .boxes {
+        display: flex;
+        justify-content: center;
+        padding-top: 200px;
+    }
+
+    .box1 {
+        background-color: rgb(136, 220, 220);
+        width: 31%;
+        height: 65vh;
+        border-radius: 25px;
+        padding: 60px 25px;
+        font-family: cursive;
+    }
+
+    .box1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box1>button:hover {
+        background-color: rgb(136, 220, 220);
+        border-color: black;
+    }
+
+    .box2 {
+        background-color: rgb(177, 227, 227);
+        width: 31%;
+        height: 65vh;
+        border-radius: 25px;
+        padding: 55px 25px;
+        font-family: cursive;
+    }
+
+    .box2>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .box2>button:hover {
+        background-color: rgb(177, 227, 227);
+        border-color: black;
+    }
+
+    .pic {
+        width: 25px;
+        height: 5vh;
+    }
+
+    .about {
+        display: flex;
+        padding-top: 500px;
+        gap: 40px;
+    }
+
+    .about1 {
+        width: 35%;
+        font-family: verdana;
+        font-size: 18px;
+        animation-duration: 1s;
+        animation-name: matter;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes about1 {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translatex(-100px);
+        }
+    }
+
+    .about2 summary:hover {
+        background-color: rgb(68, 150, 212);
+        width: 95%;
+        height: 5vh;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+
+    .bgimage {
+        background-image: url(https://files.123freevectors.com/wp-content/original/142192-blue-and-white-professional-background.jpg);
+        width: 100%;
+        height: 140vh;
+    }
+
+    .text1 {
+        text-align: center;
+        font-family: cursive;
+        font-style: oblique;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .bgcolor {
+        background-color: white;
+        width: 75%;
+        height: 100vh;
+        border-radius: 25px;
+        position: relative;
+        left: 180px;
+    }
+
+    .how {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 30px;
+    }
+
+    .how2 p {
+        width: 300px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 25px;
+    }
+
+    .dentist {
+        display: flex;
+        padding-left: 200px;
+        animation-duration: 1s;
+        animation-name: dentist;
+        transition-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes dentist {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translatex(-100px);
+        }
+    }
+
+    .dentist1 {
+        width: 90%;
+        padding-right: 200px;
+        font-family: cursive;
+        font-size: 20px;
+    }
+
+    .dentist1 b {
+        font-size: 25px;
+    }
+
+    .dentist1>button:hover {
+        background-color: aqua;
+        border-color: rgb(16, 16, 17);
+    }
+
+    .dentist1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .dentist2 {
+        padding-bottom: 180px;
+    }
+
+    .counter1 {
+        background-color: rgb(208, 208, 208);
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        column-gap: 300px;
+        align-items: center;
+
+
+    }
+
+    .count1 {
+        width: 10px;
+
+    }
+
+    .count1>b {
+        font-size: 70px;
+
+    }
+
+    .count1>span {
+        color: aqua;
+        font-weight: bold;
+    }
+
+    .section {
+        background-image: url(https://c1.wallpaperflare.com/preview/736/61/167/aerial-cardiac-care-checkup.jpg);
+        width: 100%;
+        height: 115vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .section1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 60px;
+
+    }
+
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-left: 60px;
+        justify-content: center;
+    }
+
+    .section3 {
+        background-color: rgb(147, 191, 191);
+        width: 25%;
+        height: 110vh;
+        border-radius: 2%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .section3>b {
+        font-size: 80px;
+    }
+
+    .section3>button:hover {
+        background-color: rgb(147, 191, 191);
+        border-color: rgb(18, 18, 19);
+    }
+
+    .section3>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        border-color: white;
+    }
+
+    .section5>b {
+        font-size: 80px;
+    }
+
+    .section5>button:hover {
+        background-color: rgb(231, 241, 238);
+        border-color: rgb(15, 16, 17);
+    }
+
+    .section5>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        background-color: rgb(97, 97, 152);
+    }
+
+    .section5 {
+        background-color: rgb(218, 221, 221);
+        width: 25%;
+        height: 110vh;
+        border-radius: 2%;
+        text-align: center;
+        padding-top: 70px;
+    }
+
+    .FAQ {
+        margin-left: 100px;
+        display: flex;
+        column-gap: 200px;
+        padding-top: 50px;
+        z-index: 2;
+    }
+
+    .FAQ1>p,
+    b {
+        font-size: 40px;
+        font-family: cursive;
+    }
+
+    .FAQ1>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .FAQ1>button {
+        border-radius: 40%;
+        padding: 20px 20px;
+        background-color: aqua;
+    }
+
+    .FAQ2 {
+        width: 40%;
+        font-family: cursive;
+    }
+
+    .address {
+        background-color: gainsboro;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 60px;
+    }
+
+    .address1 {
+        display: flex;
+        column-gap: 35px;
+        align-items: center;
+    }
+
+    .appoint {
+        display: flex;
+        column-gap: 50px;
+        padding-left: 40px;
+    }
+
+    .appointment {
+        background-image: url(https://jevelin.shufflehound.com/medical/wp-content/uploads/sites/23/2018/09/Rounded-Rectangle-1202-copy-21.jpg);
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .appointment1 {
+        color: white;
+        margin-left: 70px;
+        margin-top: 180px;
+
+    }
+
+    .app1 {
+        display: flex;
+        column-gap: 10px;
+        color: white;
+        width: 340px;
+    }
+
+    .appoint1 {
+        display: flex;
+        column-gap: 250px;
+    }
+
+    .appointment2>p {
+        color: blue;
+    }
+
+    .inp {
+        width: 400px;
+        height: 40px;
+    }
+
+    .appointment2>button:hover {
+        background-color: white;
+        border-color: aqua;
+    }
+
+    .appointment2>button {
+        border-radius: 40%;
+        padding: 20px 40px;
+        background-color: aqua;
+    }
+
+    #foot {
+        display: flex;
+        column-gap: 5%;
+        background-color: black;
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot1 {
+        width: 30%;
+        color: white;
+    }
+
+    .foot2>h2 {
+        color: white;
+    }
+
+    .foot2_1>img {
+        border-radius: 50%;
+    }
+
+    .foot2_1 {
+        display: flex;
+        color: white;
+        column-gap: 20px;
+    }
+
+    .foot3_1 {
+        display: flex;
+        column-gap: 10px;
+        color: white;
+    }
+
+    .foot4 {
+        background-color: gray;
+        width: 100%;
+        height: 15vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
